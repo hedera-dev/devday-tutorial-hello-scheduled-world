@@ -287,16 +287,16 @@ This tells the contract to print "Hello Hedera!" every 15 seconds.
 
 ```bash
 # Is it active?
-cast call $CONTRACT_ADDRESS 'isActive()' --rpc-url $HEDERA_RPC_URL
+cast call $CONTRACT_ADDRESS 'isActive()(bool)' --rpc-url $HEDERA_RPC_URL
 
 # What's the message?
-cast call $CONTRACT_ADDRESS 'message()' --rpc-url $HEDERA_RPC_URL
+cast call $CONTRACT_ADDRESS 'message()(string)' --rpc-url $HEDERA_RPC_URL
 
 # What's the interval?
-cast call $CONTRACT_ADDRESS 'interval()' --rpc-url $HEDERA_RPC_URL
+cast call $CONTRACT_ADDRESS 'interval()(uint256)' --rpc-url $HEDERA_RPC_URL
 
 # Contract balance (for gas)
-cast balance $CONTRACT_ADDRESS --rpc-url $HEDERA_RPC_URL
+cast balance $CONTRACT_ADDRESS --rpc-url $HEDERA_RPC_URL --ether
 ```
 
 ---
