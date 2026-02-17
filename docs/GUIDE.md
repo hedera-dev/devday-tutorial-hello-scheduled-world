@@ -81,7 +81,7 @@ source .env
 ### Step 1.5: Install Dependencies
 
 ```bash
-forge install hashgraph/hedera-smart-contracts@main --no-commit
+forge install hashgraph/hedera-smart-contracts@main
 ```
 
 ---
