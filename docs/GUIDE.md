@@ -225,7 +225,8 @@ forge build
 forge create src/HelloScheduledWorld.sol:HelloScheduledWorld \
   --rpc-url $HEDERA_RPC_URL \
   --private-key $HEDERA_PRIVATE_KEY \
-  --value 5ether
+  --value 10ether \
+  --broadcast
 ```
 
 **Note:** We send 5 HBAR (`5 ether` in wei) to fund scheduled executions.
@@ -372,6 +373,7 @@ The `HelloScheduledAirdrop.sol` contract demonstrates a real-world use case: an 
 forge create src/HelloScheduledAirdrop.sol:HelloScheduledAirdrop \
   --rpc-url $HEDERA_RPC_URL \
   --private-key $HEDERA_PRIVATE_KEY \
+  --broadcast \
   --value 10ether \
   --constructor-args "Airdrop Token" "ADT" 1000000000000000000000000
 
